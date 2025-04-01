@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/landlords?useSSL=false&serverTimezone=UTC
+    username: root
+    password: freshman
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+landlords:
+  frontend-host: localhost:9000
+  jwt-secret: 298b8610-6835-4d12-b8ae-efba3dbcccad
+
+logging:
+  level:
+    site.pushy.landlords.dao: debug
